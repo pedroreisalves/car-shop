@@ -9,6 +9,15 @@ export const carMock: ICar = {
   doorsQty: 2
 };
 
+export const invalidCarMock: ICar = {
+  model: "",
+  year: 1800,
+  color: "red",
+  buyValue: 3500000,
+  seatsQty: 2,
+  doorsQty: 2
+};
+
 export const carMockWithId: ICar & { _id: string } = {
   _id: "4edd40c86762e0fb12000003",
   model: "Ferrari Maranello",
