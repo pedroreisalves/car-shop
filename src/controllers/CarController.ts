@@ -1,4 +1,4 @@
-import { RequestHandler } from 'express';
+import { Request, Response } from 'express';
 import { IService } from '../interfaces/IService';
 import { ICar } from '../interfaces/ICar';
 
@@ -8,27 +8,27 @@ class CarController {
     this._car = service;
   }
 
-  create: RequestHandler = async (req, res) => {
+  create = async (req: Request, res: Response) => {
     const newCar = await this._car.create(req.body);
     return res.status(201).json(newCar);
   };
 
-  update: RequestHandler = async (req, res) => {
+  update = async (req: Request, res: Response) => {
     const updatedCar = await this._car.update(req.params.id, req.body);
     return res.status(200).json(updatedCar);
   };
 
-  read: RequestHandler = async (_req, res) => {
+  read = async (_req: Request, res: Response) => {
     const cars = await this._car.read();
     return res.status(200).json(cars);
   };
 
-  readOne: RequestHandler = async (req, res) => {
+  readOne = async (req: Request, res: Response) => {
     const car = await this._car.readOne(req.params.id);
     return res.status(200).json(car);
   };
 
-  delete: RequestHandler = async (req, res) => {
+  delete = async (req: Request, res: Response) => {
     const removedCar = await this._car.delete(req.params.id);
     return res.status(204).json(removedCar);
   };
