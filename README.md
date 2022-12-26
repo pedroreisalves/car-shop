@@ -1,13 +1,26 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
-
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
-
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# Car Shop
+### About project:
+The purpose of the project is to manage an automotive store, storing car information in the database.
+### How to run:
+- Clone the repository.
+- Run the following commands:
+```
+docker-compose up -d
+```
+### How to run tests:
+- Run the following commands:
+```
+npm run test:dev
+```
+### Built with:
+- [Docker](https://www.docker.com/)
+- [Node.js](https://nodejs.org/en/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Express](https://expressjs.com/pt-br/)
+- [Mocha](https://mochajs.org/)
+- [Chai](https://www.chaijs.com/)
+- [Sinon](https://sinonjs.org/)
+- [Mongoose](https://mongoosejs.com/)
+- [MongoDB](https://www.mongodb.com/)
+### Developed by:
+- [Pedro Reis](https://www.linkedin.com/in/pedroreisalves/)
